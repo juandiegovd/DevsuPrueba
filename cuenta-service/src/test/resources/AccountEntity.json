@@ -1,0 +1,10 @@
+{
+  "id": 4,
+  "clientId": 1,
+  "number": "32346",
+  "type": "CUENTA NEGOCIO",
+  "actualAmount": 130.0,
+  "firstAmount": 130.0,
+  "status": true,
+  "transactionList": []
+}

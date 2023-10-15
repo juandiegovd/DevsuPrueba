@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "3b56925d-2f8a-4e81-9e0a-f33431075554",
+		"name": "PRUEBAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22122702"
+	},
+	"item": [
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"prueba\",\r\n    \"documentNumber\": \"09131745\",\r\n    \"status\": true,\r\n    \"name\": \"Juan Diego\",\r\n    \"address\": \"Jr Universitaria 123\",\r\n    \"phone\": \"991070712\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"password\": \"prueba2\",\r\n    \"status\": true,\r\n    \"name\": \"Marco Lorenzo\",\r\n    \"address\": \"Jr Universitaria 456\",\r\n    \"phone\": \"991070712\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"password\": \"prueba2\",\r\n    \"status\": true,\r\n    \"name\": \"Marco Lorenzo\",\r\n    \"address\": \"Jr Universitaria 456\",\r\n    \"phone\": \"991070712\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\": \"32346\",\r\n    \"type\": \"CUENTA NEGOCIO\",\r\n    \"amount\": 130,\r\n    \"status\": true,\r\n    \"clientDocument\": \"09131745\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Movimiento de Deposito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"32346\",\r\n    \"type\": \"DEPOSITO\",\r\n    \"amount\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Movimiento de Retiro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"32346\",\r\n    \"type\": \"RETIRO\",\r\n    \"amount\": -20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener reporte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\": \"2023-10-09\",\r\n    \"finalDate\": \"2023-10-16\",\r\n    \"documentNumber\": \"09131745\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/reportes",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"reportes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

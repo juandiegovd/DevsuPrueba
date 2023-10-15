@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "type": "DEPOSITO",
+  "movement": 20.0,
+  "finalAmount": 150.0,
+  "createdOn": "2023-10-13T18:11:43.756018",
+  "accountEntity": {
+    "id": 4,
+    "clientId": 1,
+    "number": "32346",
+    "type": "CUENTA NEGOCIO",
+    "amount": 130.0,
+    "status": true
+  }
+}
